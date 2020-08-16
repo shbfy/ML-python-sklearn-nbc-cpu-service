@@ -8,7 +8,7 @@ def test_example_message(client):
 
     result = client.simulate_get('/wine')
     assert result.json == {
-        'message': 'This service verifies a model using the Iris Test data set. '
+        'message': 'This service verifies a model using the Wine Test data set. '
                    'Invoke using the form /Wine/<index of test sample>. For example, /wine/24'}, \
         "The service test will fail until a trained model has been approved"
 
